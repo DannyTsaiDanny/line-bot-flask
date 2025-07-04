@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: line-bot-webhook
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python webhook.py"
+    envVars:
+      - key: LINE_CHANNEL_ACCESS_TOKEN
+        value: 9fCj5fJkmpjouxH1OLAVGq8cryioadgMMwS4EKzglBNDSvHAOeSxtIFFr9dekCC5DWhzdLJnEXq2M5bF2zHEV1A1QZzlyOVrtGVpfqRsCgZreWaOgIJ6pVpnRcgKErNr9JskqLXg2YU7yNnqFt6RPAdB04t89/1O/w1cDnyilFU=
+      - key: LINE_CHANNEL_SECRET
+        value: 511eeb25f03f64a61bfbc47aec261c2a
+
